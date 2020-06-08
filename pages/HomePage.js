@@ -5,7 +5,7 @@ const HomePage = () => {
         <div className="homeWrapperContainer">
             <code>Welcome to Questionnaire Website</code>
             <div className="buttonWrapperContainer">
-                <button title="QUESTIONNAIRE" onClick={() => Router.push('/Questionnaire/QuestionBox')}>QUESTIONNAIRE</button>
+                <button title="QUESTIONNAIRE" onClick={() => Router.push('/Questionnaire/QuestionnaireHome')}>QUESTIONNAIRE</button>
                 <button title="USER PROFILE" onClick={() => Router.push('/UserProfile/UserProfile')}>UserProfile</button>
             </div>
             <style jsx>{`
