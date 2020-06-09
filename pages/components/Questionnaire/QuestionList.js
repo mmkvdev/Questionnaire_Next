@@ -23,6 +23,7 @@ const QuestionList = () => {
                         height: 10px;
                         margin-top: 10px;
                         padding: 5px;
+                        font-family: 'Metal Mania', cursive;
                     },
                     .buttonListContainer {
                         width: 600px;
@@ -30,6 +31,7 @@ const QuestionList = () => {
                         text-align: center;
                         padding: 5px;
                         border-radius: 2px;
+                        font-family: 'Metal Mania', cursive;
                     }
                 `}</style>
             </div>
