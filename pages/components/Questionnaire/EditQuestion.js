@@ -8,7 +8,6 @@ const EditQuestion = (props) => {
     const [enteredValue, setOutputValue] = useState('');
     const router = useRouter();
     const { button_id, button_content } = router.query
-    // console.log(button_id, button_content)
     const dispatch = useDispatch();
     const handleEdit = (enteredText) => {
         setOutputValue(enteredText.target.value);
