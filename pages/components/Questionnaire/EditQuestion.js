@@ -41,6 +41,7 @@ const EditQuestion = (props) => {
                     text-align: center;
                     padding: 20px;
                     border-radius: 2px;
+                    font-family: 'Metal Mania', cursive;
                 },
                 .buttonEditWrapper {
                     width: 500px;
@@ -48,6 +49,7 @@ const EditQuestion = (props) => {
                     text-align: center;
                     padding: 10px;
                     border-radius: 2px;
+                    font-family: 'Metal Mania', cursive;
                 }
             `}</style>
             </div>
