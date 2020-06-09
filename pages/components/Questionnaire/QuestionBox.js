@@ -60,6 +60,7 @@ const QuestionBox = () => {
                     text-align: center;
                     padding: 5px;
                     border-radius: 2px;
+                    font-family: 'Metal Mania', cursive;
                 }
             `}</style>
             </div>
