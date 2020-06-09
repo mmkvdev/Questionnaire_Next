@@ -18,11 +18,20 @@ const UserProfile = () => {
     })
     return (
         <div className="userProfileContainer">
-            <code>UserProfile: </code>
+            <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet" />
+            <code className="codeContainer">UserProfile: </code>
             {userIterator}
             <style jsx>{`
                 .userProfileContainer {
-                    font-size: 200,
+                    font-size: 200;
+                    text-align: center;
+                    font-size: 24px;
+                    margin: 100px;
+                    padding: 30px;
+                    background-color: #0379ae
+                },
+                .codeContainer {
+                    font-family: 'Metal Mania', cursive;
                 }
             `}</style>
         </div>
