@@ -1,12 +1,16 @@
-const mongoose = require('mongoose');
+const mongoose = require('../lib/DbConnect');
 
-const AuthSchema = new mongoose.Schema({
-    email : {
-        type: String
+
+const AuthSchema = mongoose.Schema;
+const userOAuthSchema = new Schema({
+    oAuthId : {
+        type: Number,
+        required: true
     },
-    password : {
-        type: String
+    oAuthData : {
+        type: Object,
+        required: true
     }
-})
+});
 
-module.exports = mongoose.models.userAuth || mongoose.model('users',AuthSchema);
+module.exports = mongoose.models.User || mongoose.model('User',userOAuthSchema);
