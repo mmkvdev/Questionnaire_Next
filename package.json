@@ -8,8 +8,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.2",
+    "nanoid": "^3.1.10",
     "next": "9.4.4",
+    "next-connect": "^0.7.1",
+    "next-session": "^3.2.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "swr": "^0.2.3",
+    "validator": "^13.1.1"
   }
 }
