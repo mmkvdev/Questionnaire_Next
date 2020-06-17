@@ -1,4 +1,3 @@
-// const dbConnect = require('../mongoose');
 const User = require('../models/user');
 
 export default async (req, res) => {

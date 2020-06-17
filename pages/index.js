@@ -50,9 +50,7 @@ export default function Home(props) {
 
 async function getUser(authorization) {
   const res = await fetch('http://localhost:3001/user', { headers: { authorization } })
-  // console.log(res)
   if (res.status === 200) {
-    // console.log(res.data)
     return { authorization, user: res.data }
   }
   else return { authorization }
@@ -62,6 +60,5 @@ Home.getInitialProps = async (ctx) => {
   const { authorization } = parseCookies(ctx);
   const { token } = ctx.query
   const props = getUser(authorization || token)
-  // console.log(props)
   return props;
 }
