@@ -1,4 +1,4 @@
-This is a `NextJS` powered application for my previous project [Quesstionnaire](https://github.com/Madhu5A3/Questionnaire)
+This is a `NextJS` powered application for my previous project [Questionnaire](https://github.com/Madhu5A3/Questionnaire)
 
 
 ## To SetUp the environment for this project
