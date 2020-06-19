@@ -18,12 +18,15 @@ export default function Home(props) {
       </div>
       <div>
         {
-          !props.authorization && 
-            <div className="serverPropContainer">
-                <a className= "linkContainer" href={"http://localhost:3001/auth/github"} >Click here to login</a>
-            </div>
+          !props.authorization &&
+          <div className="serverPropContainer">
+            <a className="linkContainer" href={"http://localhost:3001/auth/github"} >Click here to login</a>
+          </div>
         }
       </div>
+      <p className="footerContainer">
+        Made with <span role="img">🕶</span> by <a href="https://github.com/Madhu5A3">MMK</a>
+      </p>
       <style jsx>{`
         .serverPropContainer {
           width: '80%';
@@ -41,6 +44,12 @@ export default function Home(props) {
           padding: 10px;
           border-radius: 2px;
           margin: 20px;
+        },
+        .footerContainer {
+          text-align: center;
+          font-size: 1rem;
+          margin: 10px;
+          padding: 1rem;
         }
       `}</style>
     </div>
