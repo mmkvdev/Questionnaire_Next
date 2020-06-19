@@ -1,7 +1,7 @@
 This is a `NextJS` powered application for my previous project [Questionnaire](https://github.com/Madhu5A3/Questionnaire)
 
 
-## To SetUp the environment for this project
+## To kickstart the project
 
 First, run the development server:
 
