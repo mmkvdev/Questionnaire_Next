@@ -29,7 +29,7 @@ const HomePage = () => {
                     border-radius: 2px;
                     margin: 20px;
                     font-family: 'Metal Mania', cursive;
-                }
+                },
             `}
             </style>
         </div>
