@@ -12,10 +12,10 @@ passport.use(new Strategy({
   callbackURL: "http://localhost:3001/auth/github/callback"
 },
 
-function (accessToken, refreshToken, profile, cb) {
-  users.findOrCreate(profile);
-  return cb(null, profile);
-}
+  function (accessToken, refreshToken, profile, cb) {
+    users.findOrCreate(profile);
+    return cb(null, profile);
+  }
 ));
 
 router.get('/github', (req, res, next) => {
@@ -23,19 +23,19 @@ router.get('/github', (req, res, next) => {
   const state = JSON.stringify({ redirectTo });
   const authenticator = passport.authenticate('github', { scope: [], state, session: true });
   authenticator(req, res, next);
-}, (req, res, next) =>{
+}, (req, res, next) => {
   next();
 });
 
 router.get(
   '/github/callback',
-  passport.authenticate('github', { failureRedirect: '/login' }), (req, res, next) => {
-    const token = jwt.sign({id: req.user.id}, JWT_KEY, {expiresIn: 60 * 60 * 24 * 1000})
-    req.logIn(req.user, function(err) {
-      if (err) return next(err); ;
+  passport.authenticate('github', { failureRedirect: '/' }), (req, res, next) => {
+    const token = jwt.sign({ id: req.user.id }, JWT_KEY, { expiresIn: 60 * 60 * 24 * 1000 })
+    req.logIn(req.user, function (err) {
+      if (err) return next(err);;
       res.redirect(`http://localhost:3000?token=${token}`)
     });
-        
+
   },
 );
 module.exports = router;
