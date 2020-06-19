@@ -6,7 +6,7 @@ const HomePage = () => {
             <code className="codeContainer">Welcome to Questionnaire Website</code>
             <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet" />
             <div className="buttonWrapperContainer">
-                <button title="QUESTIONNAIRE" onClick={() => Router.push('/components/Questionnaire/QuestionnaireHome')}>QUESTIONNAIRE</button>
+                <button title="QUESTIONNAIRE" onClick={() => Router.push('/components/Questionnaire/QuestionBox')}>QUESTIONNAIRE</button>
                 <button title="USER PROFILE" onClick={() => Router.push('/components/UserProfile/UserProfile')}>UserProfile</button>
             </div>
             <style jsx>{`
