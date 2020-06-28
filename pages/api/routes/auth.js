@@ -7,8 +7,8 @@ const JWT_KEY = "nextjs_authentication"
 const router = express();
 
 passport.use(new Strategy({
-  clientID: "22a3b7ecd6b30f58b9d0",
-  clientSecret: "f0985fc0885fca906a07f944d4a427be4eb7cadf",
+  clientID: process.env.GITHUB_CLIENT_ID,
+  clientSecret: process.env.GITHUB_CLIENT_SECRET,
   callbackURL: "http://localhost:3001/auth/github/callback"
 },
 
